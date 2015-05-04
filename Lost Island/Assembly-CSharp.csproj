@@ -46,13 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CopyDirectory.cs" />
      <Compile Include="Assets\Imported Assets\RoadTool\Scripts\Road.cs" />
      <Compile Include="Assets\Imported Assets\Water Flow Free\Scripts\WaterFlow.cs" />
      <Compile Include="Assets\Imported Assets\Water Flow Free\Scripts\WaterFlowDemo.cs" />
      <Compile Include="Assets\Imported Assets\Water Flow Free\Scripts\WaterFlowOrbitCamera.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\EnemyAI2.cs" />
+     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Scripts\MeleeSystem.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
