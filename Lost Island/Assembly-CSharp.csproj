@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CopyDirectory.cs" />
      <Compile Include="Assets\Imported Assets\RoadTool\Scripts\Road.cs" />
      <Compile Include="Assets\Imported Assets\Water Flow Free\Scripts\WaterFlow.cs" />
      <Compile Include="Assets\Imported Assets\Water Flow Free\Scripts\WaterFlowDemo.cs" />

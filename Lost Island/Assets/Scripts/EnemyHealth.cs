@@ -3,11 +3,28 @@ using System.Collections;
 
 public class EnemyHealth : MonoBehaviour 
 {
-	public int health = 30;
+	public int currentHealth;
+	public int startingHealth = 30;
+	public AudioClip deathClip;
+	public AudioClip hurtClip;
+
+
+	CapsuleCollider capsuleCollider;
+	Animator anim;
+	AudioSource enemyAudio;
+
+
+	void Awake()
+	{
+		currentHealth = startingHealth;
+		capsuleCollider = GetComponent<CapsuleCollider>();
+		anim = GetComponent<Animator>();
+		enemyAudio = GetComponent<AudioSource>();
+	}
 
 	private void Update()
 	{
-		if (health <= 0) 
+		if (currentHealth <= 0) 
 		{
 			Dead();
 		}
@@ -15,11 +32,20 @@ public class EnemyHealth : MonoBehaviour
 
 	private void ApplyDamage(int damage)
 	{
-		health -= damage;
+		currentHealth -= damage;
+		enemyAudio.clip = hurtClip;
+		enemyAudio.Play();
+		if (currentHealth <= 0)
+		{
+			Dead ();
+		}
 	}
 
 	private void Dead()
 	{
-		Destroy(gameObject);
+		anim.SetTrigger("Dead");
+		Destroy(gameObject, 2f);
+		enemyAudio.clip = deathClip;
+		enemyAudio.Play();
 	}
 }

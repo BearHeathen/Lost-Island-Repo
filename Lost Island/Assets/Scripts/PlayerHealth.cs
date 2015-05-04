@@ -39,7 +39,7 @@ public class PlayerHealth : MonoBehaviour
 		damaged = false;
 	}
 	
-	private void ApplyDamagePlayer(int damage)
+	public void ApplyDamagePlayer(int damage)
 	{
 		damaged = true;
 		currentHealth -= damage;
@@ -51,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
 		}
 	}
 	
-	private void Dead()
+	public void Dead()
 	{
 		isDead = true;
 		//Filler, will replace with respawn if lives >= 1 or will show Game Over otherwise.
