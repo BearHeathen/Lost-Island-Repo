@@ -7,6 +7,9 @@ TagManager:
   - VolcanoZone
   - VolcanoSound
   - Enemy
+  - Water
+  - Lava
+  - Player Respawn
   layers:
   - Default
   - TransparentFX
