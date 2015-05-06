@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\OnLavaEnter.cs">
     <Files>
       <File FileName="Assets\Scripts\PlayerHealth.cs" Line="21" Column="34" />
-      <File FileName="Assets\Scripts\OnLavaEnter.cs" Line="33" Column="34" />
-      <File FileName="Assets\Scripts\EnemyMovement.cs" Line="19" Column="50" />
+      <File FileName="Assets\Scripts\OnLavaEnter.cs" Line="39" Column="60" />
+      <File FileName="Assets\Scripts\EnemyMovement.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EnemyAttack.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
