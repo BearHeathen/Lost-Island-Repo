@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Unity Projects\TestProject\Test Project\Assets\Editor\VSCodeUnity\VSCodeUnity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\OnLavaEnter.cs">
     <Files>
-      <File FileName="..\..\..\Unity Projects\TestProject\Test Project\Assets\Editor\VSCodeUnity\VSCodeUnity.cs" Line="171" Column="4" />
+      <File FileName="Assets\Scripts\OnWaterEnter.cs" Line="32" Column="3" />
+      <File FileName="Assets\Scripts\EnemyAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\OnLavaEnter.cs" Line="19" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
