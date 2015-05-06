@@ -1,6 +1,6 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{B14E318D-A700-90B9-6CD2-2AA8531D32F2}") = "Lost Island", "Assembly-CSharp-firstpass-vs.csproj", "{BFA3AC41-5158-73DC-43E7-73636002DA7A}"
 EndProject
 Project("{B14E318D-A700-90B9-6CD2-2AA8531D32F2}") = "Lost Island", "Assembly-CSharp-vs.csproj", "{CA48F7A0-F48F-59DA-E831-3EC91669E29C}"
@@ -35,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

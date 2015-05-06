@@ -1,6 +1,6 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{3B161111-3EA3-FCBD-4231-F8FC3372BEE0}") = "Ch3Lab1", "Assembly-CSharp-firstpass-vs.csproj", "{9470ECA8-8981-337A-B1BA-5E49217AF3D3}"
 EndProject
 Global
