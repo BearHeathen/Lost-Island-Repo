@@ -6,25 +6,31 @@ public class OnWaterEnter : MonoBehaviour {
 	private GameObject Water;
 	public Transform Player;
 	public Transform Destination;
+	PlayerHealth playerHealth;
 
 	// Use this for initialization
 	void Start () {
 	
 	}
 
-	//void Awake () {}
+	void Awake () {
+		playerHealth = Player.GetComponent<PlayerHealth>();
+	}
 
 	void OnTriggerEnter (Collider other)
 	{
 		if (other.tag == "Player") {
 			Water = GameObject.Find("Water");
-			KIllPlayer();
+			KillPlayer();
+			playerHealth.RestoreHealth();
+			playerHealth.ApplyDamagePlayer(0f);
 		}
 	}
 
-	void KIllPlayer()
+	void KillPlayer()
 	{
 		Player.transform.position = Destination.position;
+
 	}
 	
 	// Update is called once per frame

@@ -6,7 +6,7 @@ public class EnemyAI2 : MonoBehaviour
 	float distance;
 
 	public Transform target;
-	public int damage = 5;
+	public float damage = 5f;
 	public float lookAtDistance = 25.0f;
 	public float attackRange = 2.0f;
 	public float chaseRange = 15.0f;
