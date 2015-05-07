@@ -8,6 +8,7 @@ TagManager:
   - VolcanoSound
   - Enemy
   - LivesBar
+  - GameOver
   layers:
   - Default
   - TransparentFX

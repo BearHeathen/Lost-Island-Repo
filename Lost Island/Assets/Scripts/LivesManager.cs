@@ -12,11 +12,13 @@ public class LivesManager : MonoBehaviour
 	{
 		text = GetComponent<Text>();
 		lives = 3;
+
 	}
 	
 
 	void Update () 
 	{
 		text.text = "Lives: " + lives;
+
 	}
 }

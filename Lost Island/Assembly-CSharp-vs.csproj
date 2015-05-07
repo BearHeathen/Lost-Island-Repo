@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\LivesManager.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Scripts\MeleeSystem.cs" />
