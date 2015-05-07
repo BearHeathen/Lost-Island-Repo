@@ -53,12 +53,12 @@
      <Compile Include="Assets\Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\LivesManager.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Scripts\MeleeSystem.cs" />
      <Compile Include="Assets\Scripts\OnLavaEnter.cs" />
      <Compile Include="Assets\Scripts\OnWaterEnter.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
-     <Compile Include="Assets\Scripts\PlayerLives.cs" />
      <Compile Include="Assets\Scripts\SceneFade.cs" />
      <Compile Include="Assets\Scripts\ShootingScript.cs" />
      <Compile Include="Assets\Scripts\VolcanoTrigger.cs" />
