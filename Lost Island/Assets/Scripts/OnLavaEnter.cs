@@ -20,17 +20,13 @@ public class OnLavaEnter : MonoBehaviour {
 	{
 		if (other.tag == "Player") {
 			LavaBox = GameObject.Find("LavaBox");
-			KIllPlayer();
-			playerHealth.RestoreHealth();
-			playerHealth.ApplyDamagePlayer(0f);
+			playerHealth.Dead();
+
+			//playerHealth.ApplyDamagePlayer(0f);
 		}
 	}
 	
-	void KIllPlayer()
-	{
-		Player.transform.position = Destination.position;
-	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	}

@@ -1,16 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\OnWaterEnter.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerHealth.cs">
     <Files>
-      <File FileName="Assets\Scripts\OnLavaEnter.cs" Line="25" Column="39" />
-      <File FileName="Assets\Scripts\PlayerHealth.cs" Line="43" Column="3" />
-      <File FileName="Assets\Scripts\OnWaterEnter.cs" Line="32" Column="52" />
-      <File FileName="Assets\Scripts\PlayerLives.cs" Line="26" Column="19" />
-      <File FileName="Assets\Scripts\EnemyAI.cs" Line="80" Column="1" />
-      <File FileName="Assets\Scripts\EnemyAI2.cs" Line="108" Column="1" />
-      <File FileName="Assets\Scripts\EnemyAttack.cs" Line="18" Column="55" />
-      <File FileName="Assets\Scripts\EnemyHealth.cs" Line="52" Column="1" />
-      <File FileName="Assets\Scripts\EnemyMovement.cs" Line="40" Column="1" />
+      <File FileName="Assets\Scripts\PlayerLives.cs" Line="9" Column="30" />
+      <File FileName="Assets\Scripts\PlayerHealth.cs" Line="35" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

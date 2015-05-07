@@ -1,36 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class PlayerLives : MonoBehaviour {
-
-	//Lives Bar elements 
-	public GUIText LivesBar;
-
+public class PlayerLives : MonoBehaviour 
+{
 	//player elements 
-	public GUIText Player;
-	public int PLives = 3;
-	public int CurrentPLives;
+	public int startingLives = 3;
+	public int currentLives = 0;
+	PlayerHealth playerHealth;
 
 	// Use this for initialization
-	void Start () {
-		CurrentPLives = PLives;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
-
-	private void PlayerMinusLivesCount (int Lives)
+	void Awake () 
 	{
-		CurrentPLives -= 1;
+		currentLives = startingLives;
 
-		if(CurrentPLives == 0)
+	}
+	// Update is called once per frame
+	void Update () 
+	{
+
+		if (currentLives <= 0) 
 		{
-			//will end the game and display a message to the player stating that they have Lost The Game
-
-		} else{
-		LivesBar.text = "Lives" + CurrentPLives;
+			GameOver ();
 		}
+	}
+
+
+	private void GameOver() 
+	{
+
+		Debug.Log("Game Over");
 	}
 }
