@@ -10,5 +10,10 @@ public class LoadScene : MonoBehaviour
         Application.LoadLevel(level);
         
     }
+
+	public void QuitGame()
+	{
+		Application.Quit();
+	}
 	
 }

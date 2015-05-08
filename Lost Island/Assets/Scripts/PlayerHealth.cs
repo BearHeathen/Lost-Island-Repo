@@ -22,12 +22,18 @@ public class PlayerHealth : MonoBehaviour
 	bool damaged;
 	bool isDead;
 
+	//Enemy Elements
+	public GameObject enemy;
+	//EnemyHealth enemyHealth;
+
 	//OnLavaEnter respawner;
 
 	void Awake()
 	{
 		currentHealth = startingHealth;
 		player.GetComponent<Transform>();
+		enemy = GameObject.FindGameObjectWithTag("Enemy");
+		//enemyHealth = GetComponent<EnemyHealth>();
 
 	}
 	
@@ -70,6 +76,11 @@ public class PlayerHealth : MonoBehaviour
 		player.transform.position = playerRespawn.transform.position;
 		healthSlider.value = startingHealth;
 		currentHealth = startingHealth;
+		//enemyHealth.currentHealth = enemyHealth.startingHealth;
+		enemy.GetComponent<EnemyHealth>().currentHealth = enemy.GetComponent<EnemyHealth>().startingHealth;
+
+
+
 
 	}
 }

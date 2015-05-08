@@ -6,6 +6,11 @@ public class WeaponSwitching : MonoBehaviour {
 	public GameObject weapon1;
 	public GameObject weapon2;
 
+
+	void Awake()
+	{
+		weapon1.SetActive(false);
+	}
 	// Update is called once per frame
 	void Update () 
 	{

@@ -14,6 +14,8 @@ public class GameOver : MonoBehaviour
 	public Image gameOverBackground;
 	public Color color = new Color(1f,0f,0f,1f);
 	private bool finished = false;
+	public Button playAgain;
+	public Button exitGame;
 
 
 
@@ -23,7 +25,13 @@ public class GameOver : MonoBehaviour
 		gameOverBackground = GetComponent<Image>();
 		player = GetComponent<Transform>();
 		playerAudio = GetComponent<AudioSource>();
+		playAgain = GetComponent<Button>();
+		exitGame = GetComponent<Button>();
+
 		gameOver.enabled = false;
+		playAgain.interactable = false;
+		playAgain.gameObject.SetActive(false);
+		exitGame.enabled = false;
 		Time.timeScale = 1;
 
 	}
@@ -36,6 +44,8 @@ public class GameOver : MonoBehaviour
 			finished = true;
 			PlayGameOverAudio();
 			gameOver.enabled = true;
+			playAgain.enabled = true;
+			exitGame.enabled = true;
 			HaltOperations ();
 
 		}

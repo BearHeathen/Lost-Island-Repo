@@ -44,8 +44,8 @@ public class EnemyHealth : MonoBehaviour
 	private void Dead()
 	{
 		anim.SetTrigger("Dead");
-		Destroy(gameObject, 2f);
 		enemyAudio.clip = deathClip;
 		enemyAudio.Play();
+		Destroy(gameObject, 2f);
 	}
 }

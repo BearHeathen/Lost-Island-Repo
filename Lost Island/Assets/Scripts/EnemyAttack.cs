@@ -26,6 +26,7 @@ public class EnemyAttack : MonoBehaviour {
 		if (other.gameObject == player) 
 		{
 			playerInRange = true;	
+			anim.SetTrigger("PlayerInAttackRange");
 		}
 	}
 
@@ -33,7 +34,8 @@ public class EnemyAttack : MonoBehaviour {
 	{
 		if (other.gameObject == player) 
 		{
-			playerInRange = false;	
+			playerInRange = false;
+			anim.SetTrigger("PlayerOutAttackRange");
 		}
 	}
 
@@ -45,12 +47,13 @@ public class EnemyAttack : MonoBehaviour {
 		if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0f) 
 		{
 			Attack();
-			anim.SetTrigger("PlayerInRange");
+
 
 		}
 
 		if (playerHealth.currentHealth <= 0f) 
 		{
+			anim.SetTrigger("PlayerOutRange");
 			playerHealth.Dead();
 		}
 	}
