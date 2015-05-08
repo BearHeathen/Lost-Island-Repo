@@ -22,7 +22,7 @@ public class OnLavaEnter : MonoBehaviour {
 			LavaBox = GameObject.Find("LavaBox");
 			playerHealth.Dead();
 
-			//playerHealth.ApplyDamagePlayer(0f);
+			playerHealth.ApplyDamagePlayer(0f);
 		}
 	}
 	

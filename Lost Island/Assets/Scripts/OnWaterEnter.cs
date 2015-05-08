@@ -21,9 +21,9 @@ public class OnWaterEnter : MonoBehaviour {
 	{
 		if (other.tag == "Player") {
 			Water = GameObject.Find("Water");
-			//KillPlayer();
-			//playerHealth.RestoreHealth();
-			//playerHealth.ApplyDamagePlayer(0f);
+
+			playerHealth.Dead();
+			playerHealth.ApplyDamagePlayer(0f);
 		}
 	}
 
