@@ -53,14 +53,10 @@ public class GameOver : MonoBehaviour
 	void HaltOperations()
 	{
 		Time.timeScale = 0;
-		HangOutForASecond();
-		Application.LoadLevel(1);
+		//Application.LoadLevel(1);
 	}
 
-	IEnumerator HangOutForASecond()
-	{
-		yield return new WaitForSeconds(5);
-	}
+
 
 	public void RestartGame(int scene)
 	{
