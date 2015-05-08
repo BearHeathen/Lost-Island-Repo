@@ -4,7 +4,7 @@ using System.Collections;
 public class MeleeSystem : MonoBehaviour 
 {
 
-	public int damage = 5;
+	public float damage = 5f;
 	public float distance;
 	public float maxDistance = 1.5f;
 
