@@ -4,14 +4,14 @@ using System.Collections;
 
 public class LivesManager : MonoBehaviour 
 {
-	public static int lives;
+	public static int lives = 3;
 	Text text;
 
 
 	void Awake () 
 	{
 		text = GetComponent<Text>();
-		lives = 3;
+
 
 	}
 	

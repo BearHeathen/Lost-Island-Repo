@@ -18,7 +18,8 @@ public class OnLavaEnter : MonoBehaviour {
 	
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.tag == "Player") {
+		if (other.tag == "Player") 
+		{
 			LavaBox = GameObject.Find("LavaBox");
 			playerHealth.Dead();
 

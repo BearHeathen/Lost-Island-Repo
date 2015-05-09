@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
 	public Image damageImage;
 	public float flashSpeed = 5f;
 	public Color flashColor = new Color(1f,0f,0f,0.1f);
-	public int livesValue = 1;
+	int livesValue = 1;
 
 
 
@@ -17,23 +17,23 @@ public class PlayerHealth : MonoBehaviour
 	//Player Elements
 	public float startingHealth = 100f;
 	public float currentHealth;
-	public Transform playerRespawn;
+	public GameObject playerRespawn;
 	public Transform player;
 	bool damaged;
 	bool isDead;
 
 	//Enemy Elements
-	public GameObject[] enemies;
-	//EnemyHealth enemyHealth;
+	GameObject enemy;
+	EnemyHealth enemyHealth;
 
-	//OnLavaEnter respawner;
 
 	void Awake()
 	{
 		currentHealth = startingHealth;
 		player.GetComponent<Transform>();
-		enemies = GameObject.FindGameObjectsWithTag("Enemy");
-		//enemyHealth = GetComponent<EnemyHealth>();
+		enemy = GameObject.FindGameObjectWithTag("Enemy");
+		enemyHealth = GetComponent<EnemyHealth>();
+		playerRespawn = GameObject.FindGameObjectWithTag("Respawn");
 
 	}
 	
@@ -66,25 +66,19 @@ public class PlayerHealth : MonoBehaviour
 	
 	public void Dead()
 	{
+
 		isDead = true;
+
 		Respawn();
 	}
 
 	public void Respawn()
 	{
-		LivesManager.lives -= livesValue;
+
 		player.transform.position = playerRespawn.transform.position;
 		healthSlider.value = startingHealth;
 		currentHealth = startingHealth;
-		//enemyHealth.currentHealth = enemyHealth.startingHealth;
-		for (int i = 0; i < enemies.Length; i++) 
-		{
-			enemies[i].GetComponent<EnemyHealth>().currentHealth = enemies[i].GetComponent<EnemyHealth>().startingHealth;
-		}
-
-
-
-
-
+		LivesManager.lives -= 1;
+		enemy.GetComponent<EnemyHealth>().currentHealth = enemy.GetComponent<EnemyHealth>().startingHealth;
 	}
 }

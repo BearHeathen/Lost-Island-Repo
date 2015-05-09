@@ -3,7 +3,7 @@ using System.Collections;
 
 public class OnWaterEnter : MonoBehaviour {
 
-	private GameObject Water;
+	private GameObject WaterBox;
 	public Transform Player;
 	public Transform Destination;
 	PlayerHealth playerHealth;
@@ -19,21 +19,13 @@ public class OnWaterEnter : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.tag == "Player") {
-			Water = GameObject.Find("Water");
-			//KillPlayer();
-			//playerHealth.RestoreHealth();
+		if (other.tag == "Player") 
+		{
+			WaterBox = GameObject.FindGameObjectWithTag("WaterBox");
+			playerHealth.currentHealth = 0;
+			
 			//playerHealth.ApplyDamagePlayer(0f);
 		}
 	}
 
-	void KillPlayer()
-	{
-		Player.transform.position = Destination.position;
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
 }

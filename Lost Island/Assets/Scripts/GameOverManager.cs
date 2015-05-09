@@ -18,7 +18,7 @@ public class GameOverManager : MonoBehaviour
 
 	void Update () 
 	{
-		if (LivesManager.lives <=0) 
+		if (LivesManager.lives <= 0) 
 		{
 
 			anim.SetTrigger("GameOver");
@@ -29,7 +29,7 @@ public class GameOverManager : MonoBehaviour
 			if (restartTimer >= restartDelay) 
 			{
 				Application.LoadLevel("GameOverScene");
-
+				LivesManager.lives = 3;
 			}
 
 		}
