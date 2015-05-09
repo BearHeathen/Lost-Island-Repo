@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class EnemyAttack : MonoBehaviour {
-	public float timeBetweenAttacks = 5000f;
+	public float timeBetweenAttacks = 1.8f;
 	public float attackDamage = 10f;
 
 	Animator anim;
@@ -27,6 +27,7 @@ public class EnemyAttack : MonoBehaviour {
 		{
 			playerInRange = true;	
 			anim.SetTrigger("PlayerInAttackRange");
+			Debug.Log ("Entered trigger");
 		}
 	}
 
@@ -36,6 +37,7 @@ public class EnemyAttack : MonoBehaviour {
 		{
 			playerInRange = false;
 			anim.SetTrigger("PlayerOutAttackRange");
+			Debug.Log ("Exited trigger");
 		}
 	}
 
@@ -60,12 +62,12 @@ public class EnemyAttack : MonoBehaviour {
 
 	void Attack()
 	{
-		timer = 0f;
+			timer = 0f;
 
-		if (playerHealth.currentHealth > 0f)
-		{
-			playerHealth.ApplyDamagePlayer(attackDamage);
+			if (playerHealth.currentHealth > 0f)
+			{
+				playerHealth.ApplyDamagePlayer(attackDamage);
+			}
 
-		}
 	}
 }

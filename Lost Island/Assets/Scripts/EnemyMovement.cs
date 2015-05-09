@@ -31,8 +31,8 @@ public class EnemyMovement : MonoBehaviour
 	void Update () 
 	{
 		distance = Vector3.Distance(transform.position, player.position);
-		//
-		Debug.Log(distance);
+
+		//Debug.Log(distance);
 		if (distance <= aggroRange && enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0f) 
 		{
 			anim.SetTrigger("PlayerInRange");

@@ -23,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
 	bool isDead;
 
 	//Enemy Elements
-	public GameObject enemy;
+	public GameObject[] enemies;
 	//EnemyHealth enemyHealth;
 
 	//OnLavaEnter respawner;
@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
 	{
 		currentHealth = startingHealth;
 		player.GetComponent<Transform>();
-		enemy = GameObject.FindGameObjectWithTag("Enemy");
+		enemies = GameObject.FindGameObjectsWithTag("Enemy");
 		//enemyHealth = GetComponent<EnemyHealth>();
 
 	}
@@ -77,7 +77,11 @@ public class PlayerHealth : MonoBehaviour
 		healthSlider.value = startingHealth;
 		currentHealth = startingHealth;
 		//enemyHealth.currentHealth = enemyHealth.startingHealth;
-		enemy.GetComponent<EnemyHealth>().currentHealth = enemy.GetComponent<EnemyHealth>().startingHealth;
+		for (int i = 0; i < enemies.Length; i++) 
+		{
+			enemies[i].GetComponent<EnemyHealth>().currentHealth = enemies[i].GetComponent<EnemyHealth>().startingHealth;
+		}
+
 
 
 
